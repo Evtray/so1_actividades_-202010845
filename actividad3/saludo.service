@@ -1,0 +1,9 @@
+[Unit]
+Description=Saludo Service te saluda y da la fecha
+
+[Service]
+ExecStart=/home/evtray/saludo.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
