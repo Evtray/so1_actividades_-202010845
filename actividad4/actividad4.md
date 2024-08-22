@@ -1,4 +1,4 @@
-# Greeting Service
+# Systemd Unit
 
 Este servicio de `systemd` imprime un saludo junto con la fecha y hora actual cada segundo.
 
@@ -17,7 +17,9 @@ Este servicio de `systemd` imprime un saludo junto con la fecha y hora actual ca
    done
     ```
     Ejecutar
+    ```bash
     sudo chmod +x /usr/local/bin/saludo.sh
+    ```
 
 
 
@@ -40,6 +42,8 @@ Este servicio de `systemd` imprime un saludo junto con la fecha y hora actual ca
     Habilitar el servicio para que se inicie automáticamente al arrancar 
     el sistema y luego inícialo manualmente.
 
+    ```bash
     sudo systemctl enable saludo.service
     sudo systemctl start saludo.service
+    ```
 
